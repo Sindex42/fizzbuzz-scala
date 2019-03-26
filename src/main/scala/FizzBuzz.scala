@@ -1,13 +1,11 @@
 object FizzBuzz extends App {
   def convert(x: Int) = {
-    if(x % 3 == 0 && x % 5 == 0){
-      "fizzbuzz"
-    } else if(x % 5 == 0){
-      "buzz"
-    } else if(x % 3 == 0){
-      "fizz"
-    } else {
-      x
-    }
+    var result = ""
+
+    if (x % 3 == 0) { result += "fizz" }
+    if (x % 5 == 0) { result += "buzz" }
+    if (result == "") { result = x.toString }
+
+    result
   }
 }

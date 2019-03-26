@@ -4,7 +4,7 @@ class FizzBuzzSpec extends FunSpec {
 
   describe("#convert"){
     it("returns the input") {
-      assert(FizzBuzz.convert(4) === 4)
+      assert(FizzBuzz.convert(4) === "4")
     }
 
     it("returns 'fizz' for 3") {
