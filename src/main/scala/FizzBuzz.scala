@@ -1,8 +1,10 @@
 object FizzBuzz extends App {
   def convert(x: Int) = {
-    if(x == 3) {
+    if(x == 3){
       "fizz"
-    } else {
+    } else if(x == 5){
+      "buzz"
+    } else{
       x
     }
   }
